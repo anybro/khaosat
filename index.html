@@ -1,23 +1,54 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khao sat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        #contaner {
-            background-color: rgb(rgb(143, 251, 255), green, blue);
-            position: absolute;
-            background-image: url(https://images.yourstory.com/cs/4/8e7cc4102d6c11e9aa979329348d4c3e/LGBTQ-1593256910470.png);
-            padding: 100px;
-            margin: 10px;
-            display: block;
-            justify-content: center;
-            min-width: 50%;
-            min-height: 100%;
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-image {
+            /* The image used */
+            background-image: url("https://images.yourstory.com/cs/4/8e7cc4102d6c11e9aa979329348d4c3e/LGBTQ-1593256910470.png");
+
+            /* Add the blur effect */
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Position text in the middle of the page/image */
+        .bg-text {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
         }
 
         .link {
@@ -36,23 +67,15 @@
         .link:hover {
             background-color: orange;
         }
-
-        #infos {
-            background-color: lightblue;
-            border-radius: 10px;
-            display: inline-block;
-            min-height: 100px;
-            min-width: 50%;
-            padding-bottom: 50px;
-            text-align: center;
-
-        }
     </style>
 </head>
 
 <body>
-    <div id="contaner">
 
+    <div class="bg-image"></div>
+
+
+    <div class="bg-text">
         <div id="infos">
             <h1> Phiếu khảo sát về cộng đồng LGBTQ+</h1>
             <p style="text-align: center;"> Kính chào Quý Thầy/Cô, các Cô/Chú và các em học sinh!
@@ -63,13 +86,11 @@
                 gia vào cuộc khảo sát của nhóm nghiên cứu. <i> Nhóm nghiên cứu xin cam kết toàn bộ thông tin trả lời sẽ
                     được
                     giữ bí mật tuyệt đối và chỉ sử dụng cho mục đích nghiên cứu.</i> Trân trọng cảm ơn!</p>
-            <h1 style="color:black;">Chọn đối tượng cần khảo sát</h1>
+            <h1 style="color:wheat;">Chọn đối tượng cần khảo sát</h1>
             <div style="padding: auto;">
 
                 <a class="link" href="18-.html">Dưới 18 tuổi</a>
                 <a class="link" href="18+.html">Trên 18 tuổi</a>
-
-
             </div>
         </div>
     </div>
